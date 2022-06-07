@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestSuite" thread-count="3" parallel="tests">
+
+<test name = "IEtest">
+
+<parameter name="browser" value="art"/>
+
+<classes>
+<class name ="Aarti.CrossBrowserTest">
+</class>
+
+</classes>
+
+</test>
+
+<test name = "Chrometest">
+
+<parameter name="browser" value="Chrome"/>
+
+<classes>
+<class name ="Aarti.CrossBrowserTest">
+</class>
+</classes>
+</test>
+
+<test name = "Firefoxtest">
+
+<parameter name="browser" value="Firefox"/>
+
+<classes>
+<class name ="Aarti.CrossBrowserTest">
+</class>
+
+</classes>
+
+</test>
+
+</suite>
